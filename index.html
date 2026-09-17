@@ -26,15 +26,15 @@
         </div>
           <div class="flex flex-col md:flex-row items-center gap-2 sm:gap-4 justify-center">
             <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] px-2 py-1 rounded-xl md:px-6 md:py-2 md:rounded-2xl">
-                <span class="font-semibold text-gray-800 text-sm sm:text-base">0</span>
-                <img src="assets/heart.png" alt="" class="w-[30px] h-[30px]">
+                <span id="heart-count" class="font-semibold text-gray-800 text-sm sm:text-base">0</span>
+                <img src="assets/heart.png" alt="" class="w-[30px] h-[30px]" >
             </div>
             <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] px-2 py-1 rounded-xl md:px-6 md:py-2 md:rounded-2xl">
-                <span class="font-semibold text-gray-800 text-sm sm:text-base">100</span>
+                <span id="coin-count" class="font-semibold text-gray-800 text-sm sm:text-base">100</span>
                 <img src="assets/coin.png" alt="" class="w-[30px] h-[30px]">
             </div>
             <div class="bg-green-600 text-white px-2 md:px-6 py-1 md:py-2 rounded-lg md:rounded-2xl font-semibold hover:bg-green-700 text-sm sm:text-base">
-                <p class=""><span>0</span> <span>Copy</span></p>
+                <p class=""><span id="copy-count">0</span> <span>Copy</span></p>
             </div>
           </div>
 
@@ -79,7 +79,7 @@
                             <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="National Emergency Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -105,7 +105,7 @@
                             <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Police Helpline Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -131,7 +131,7 @@
                             <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Fire Service Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -154,10 +154,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">Health</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="1994-999999">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Ambulance Service" data-number="1994-999999">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -180,10 +180,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">Help</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="109">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Women & Child Helpline" data-number="109">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -206,10 +206,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">Govt</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="106">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Anti-Corruption Helpline" data-number="106">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -232,10 +232,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">Electricity</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="16216">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Electricity Helpline" data-number="16216">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -258,10 +258,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">NGO</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="16445">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Brac Helpline" data-number="16445">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -284,10 +284,10 @@
                         <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs mb-4">Travel</span>
 
                         <div class="flex gap-2">
-                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="999">
+                            <button class="cursor-pointer copy-btn flex-1 border-2 border-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-number="163">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="জাতীয় জরুরি সেবা" data-number="999">
+                            <button class="cursor-pointer call-btn flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:-translate-y-0.5 transition-all duration-300 font-semibold text-sm sm:text-base" data-name="Bangladesh Railway Helpline" data-number="163">
                                 <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
@@ -305,10 +305,10 @@
                     <i class="fa-solid fa-clock-rotate-left text-lg sm:text-xl"></i>
                     <h3 class="text-lg md:text-xl font-bold text-gray-700">Call History</h3>
                    </div>
-                   <button class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-2xl text-xs sm:text-sm hover:bg-green-700">Clear</button> 
+                   <button id="clear-btn" class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-2xl text-xs sm:text-sm hover:bg-green-700">Clear</button> 
                 </div>
 
-                <div class="space-y-3">
+                <div id="history-container" class="space-y-3">
                     <p class="text-gray-400 text-center py-8 text-lg">No calls yet</p>
                 </div>
 
