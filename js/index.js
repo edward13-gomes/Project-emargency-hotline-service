@@ -11,8 +11,8 @@ function getID(id){
 const heartCountEl=getID("heart-count");
 const coinCountEl=getID("coin-count");
 const copyCountEl=getID("copy-count");
-const historyContainer=getID("history-container");
-const clearBtn=getID("clear-btn");
+
+
 
 // for heart icon
 const heartIcon = document.getElementsByClassName("heart-icon");
@@ -84,8 +84,47 @@ for(const btn of callBtn){
             transactionData.push(data);
          }
 
-
+        updateHistory();
         
     })
 }
+
+function updateHistory(){
+  const historyContainer=getID("history-container");
+  historyContainer.innerHTML=``;
+  if(transactionData.length===0){
+    historyContainer.innerHTML = '<p class="text-gray-400 text-center py-8 text-lg">No calls yet</p>';
+    return;
+  }
+ for(const data of transactionData){
+    const div=document.createElement('div');
+    div.className="bg-gray-50 p-3 rounded-lg shadow-sm border-gray-500"
+   div.innerHTML=`
+   <div class="flex justify-between items-center">
+     <div>
+     <h2 class="font-bold text-gray-700 text-sm md:text-lg inter-font">${data.name}</h2>
+     <p class="text-sm md:text-lg text-gray-500">${data.num}</p>
+   </div>
+   <span class="text-sm md:text-lg text-gray-800">${data.time}</span>
+   </div>
+   `
+
+   historyContainer.append(div);
+
+
+ }
+
+
+
+
+}
+
+const clearBtn=getID("clear-btn");
+
+clearBtn.addEventListener('click',function(){
+    transactionData.length=0;
+    updateHistory();
+
+    alert("Call history has been deleted!");
+})
 
